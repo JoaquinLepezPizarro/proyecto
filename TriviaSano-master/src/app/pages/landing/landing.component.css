@@ -1,0 +1,62 @@
+.fondo1 {
+  background-image: url(../../../assets/recursos/fondo1.png);
+  background-size: cover;
+}
+.o-tittle-principal {
+  font-family: Subway;
+  font-size: 100px;
+  color: #ffa502;
+}
+.o-text-principal {
+  font-family: Made;
+  font-size: 48px;
+  color: #01255b;
+  text-align: center;
+}
+.o-button {
+  padding: 16px;
+  background: #1e90ff;
+  color: white;
+  border-radius: 4px;
+  border-color: #1e90ff;
+  width: 315px;
+  height: 65px;
+  left: 135px;
+  top: 566px;
+  font-family: "Noto Sans", sans-serif;
+}
+.fondo2 {
+  background-image: url(../../../assets/recursos/fondo2.png);
+  background-size: contain;
+}
+.o-title {
+  color: #ffa502;
+  font-size: 80px;
+  font-family: Made;
+}
+.o-container-p {
+  padding: 0px 90px;
+}
+.o-title-conocenos {
+  font-family: Airbnb Cereal App Medium;
+  font-size: 36.6409px;
+  line-height: 48px;
+  color: #01255b;
+}
+.o-text {
+  font-family: Airbnb Cereal App Book;
+  font-size: 16px;
+  line-height: 170%;
+  color: rgba(0, 0, 0, 0.8);
+}
+.conocenos {
+    width: 314px;
+    height: 130px;
+    left: 0px;
+    top: 87.63px;
+  }
+
+.fondo3 {
+    background-image: url(../../../assets/recursos/fondo3.png);
+    background-size: contain;
+  }

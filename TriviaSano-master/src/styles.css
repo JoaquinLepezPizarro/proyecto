@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Subway;
+    src: url(./assets/recursos/fonts/Subway-Black.ttf);
+  }
+  @font-face {
+    font-family: Made;
+    src: url(./assets/recursos/fonts/MADE.otf);
+  }
+  @font-face {
+    font-family: 'Airbnb Cereal App Book';
+    font-style: normal;
+    font-weight: normal;
+    src: url(./assets/recursos/fonts/AirbnbCerealBook.woff) format('woff');
+    }
+
+    @font-face {
+    font-family: 'Airbnb Cereal App Light';
+    font-style: normal;
+    font-weight: normal;
+    src:  url(./assets/recursos/fonts/AirbnbCerealLight.woff) format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Airbnb Cereal App Medium';
+    font-style: normal;
+    font-weight: normal;
+    src:  url(./assets/recursos/fonts/AirbnbCerealMedium.woff) format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Airbnb Cereal App Bold';
+    font-style: normal;
+    font-weight: normal;
+    src:  url(./assets/recursos/fonts/AirbnbCerealBold.woff) format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Airbnb Cereal App Extra Bold';
+    font-style: normal;
+    font-weight: normal;
+    src:  url(./assets/recursos/fonts/AirbnbCerealExtraBold.woff) format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Airbnb Cereal App Black';
+    font-style: normal;
+    font-weight: normal;
+    src: url(./assets/recursos/fonts/AirbnbCerealBlack.woff) format('woff');
+    }

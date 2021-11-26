@@ -1,0 +1,166 @@
+ * {
+  font-family: Airbnb Cereal App Medium;
+} 
+
+input,
+select {
+  padding: 9px;
+  background: #ffffff;
+  border: 1px solid #01255b;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+h2,
+h1 {
+  color: #01255b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#form {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+#form fieldset {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.finish {
+  text-align: center;
+}
+
+#form fieldset:not(:first-of-type) {
+  display: none;
+}
+
+#form .previous-step,
+.next-step {
+  width: 100px;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
+}
+
+.form,
+.previous-step {
+  background: #616161;
+}
+
+.form,
+.next-step {
+  background: #333542;
+}
+
+#form .previous-step:hover,
+#form .previous-step:focus {
+  background-color: #000000;
+}
+
+#form .next-step:hover,
+#form .next-step:focus {
+  background-color: #1e90ff;
+}
+
+.text {
+  color: #2f8d46;
+  font-weight: normal;
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+#progressbar .active {
+  color: #333542;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 33%;
+  float: left;
+  position: relative;
+  font-weight: 400;
+}
+
+#progressbar #step1:before {
+  content: "1";
+}
+
+#progressbar #step2:before {
+  content: "2";
+}
+
+#progressbar #step3:before {
+  content: "3";
+}
+
+#progressbar #step4:before {
+  content: "4";
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+  z-index: 99;
+}
+#progressbar #step3:after {
+  content: none;
+}
+
+#progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  top: 25px;
+  z-index: 0;
+  left: 205px;
+}
+
+#progressbar li.active:after {
+  background: #333542;
+}
+#progressbar li.active:before {
+  background: #1e90ff;
+}
+
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: #333542;
+}
+.o-btn {
+  padding: 5.88235px;
+  position: static;
+  width: 144.1px;
+  height: 41.65px;
+  left: 885.1px;
+  top: 0px;
+  border-color:#1e90ff;
+  background: #1e90ff;
+  border-radius: 2.35294px;
+  color: white;
+}

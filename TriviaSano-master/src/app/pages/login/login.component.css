@@ -1,0 +1,28 @@
+main {
+  padding: 34.3021px;
+  background: #ffffff;
+  box-shadow: 0px 0px 3.70833px rgba(0, 0, 0, 0.25);
+  border-radius: 7.41667px;
+  position: static;
+  width: 400px;
+  height: 450px;
+  left: 92px;
+  top: 70px;
+  font-family: Airbnb Cereal App Medium;
+  color: #01255B;
+}
+h1{
+    font-family: Airbnb Cereal App Medium;
+    font-style: normal; 
+    font-weight: bold;
+    font-size: 37.0833px;
+    line-height: 48px;
+    color: #01255B;
+    margin-bottom: 30px;
+}
+.form-tittle {
+  text-align: center;
+  font-family: Subway;
+  font-size: 46.2007px;
+  color: #FFA502;
+}

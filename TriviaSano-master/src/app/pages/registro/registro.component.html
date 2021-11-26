@@ -1,0 +1,341 @@
+<app-nav></app-nav>
+<div
+  class="container-expand d-flex justify-content-center flex-column"
+  style="
+    background-image: url(../../../assets/recursos/fondo4.png);
+    min-height: 800px;
+    padding: 2rem 5rem;
+    background-size: contain;
+  "
+>
+  <h1>Crear cuenta</h1>
+  <div class="row d-flex justify-content-center flex-column align-items-center">
+    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-9 text-center">
+      <div class="px-0 pt-4 pb-0 mt-3 mb-3">
+        <form id="form">
+          <ul id="progressbar">
+            <li [ngClass]="{'active':show==1}" id="step1">
+              <strong>Información<br />personal</strong>
+            </li>
+            <li [ngClass]="{'active':show==2}" id="step2">
+              <strong>Información<br />médica</strong>
+            </li>
+            <li [ngClass]="{'active':show==3}" id="step3">
+              <strong>Gustos<br />personales</strong>
+            </li>
+          </ul>
+          <div *ngIf="show==1">
+            <fieldset>
+              <h2>Información base</h2>
+              <form class="row gx-4 gy-3 d-flex justify-content-evenly">
+                <div class="col-sm-3">
+                  <label>Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Andres Gallego"
+                  />
+                </div>
+                <div class="col-sm-3">
+                  <label>Edad (en años) </label>
+                  <select class="form-select" id="specificSizeSelect">
+                    <option selected>Escoge</option>
+                    <option value="1">5</option>
+                    <option value="2">6</option>
+                    <option value="3">7</option>
+                    <option value="3">8</option>
+                    <option value="3">9</option>
+                    <option value="3">10</option>
+                    <option value="3">11</option>
+                    <option value="3">12</option>
+                    <option value="3">13</option>
+                    <option value="3">14</option>
+                    <option value="3">15</option>
+                  </select>
+                </div>
+                <div class="col-sm-4">
+                  <label>Correo Electronico</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="andres@gmail.com"
+                  />
+                </div>
+                <div class="col-sm-4">
+                  <label>Fecha de nacimiento</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="10/09/2005"
+                  />
+                </div>
+                <div class="col-sm-2">
+                  <label>Sexo</label>
+                  <select class="form-select" id="specificSizeSelect">
+                    <option selected>Escoge</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                  </select>
+                </div>
+                <div class="col-sm-12" style="text-align: end;">
+                  <button type="button" class="btn btn-primary" (click)="show=2">
+                    Siguiente
+                  </button>
+                </div>
+              </form>
+            </fieldset>
+          </div>
+          <div *ngIf="show==2">
+            <fieldset>
+              <form class="row gx-6 gy-5 d-flex justify-content-evenly">
+                <h2>Información médica</h2>
+                <div class="col-sm-2">
+                  <label>Estatura(cm)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="180"
+                  />
+                </div>
+                <div class="col-sm-2">
+                  <label>Peso (kg) </label>
+                  <select class="form-select" id="specificSizeSelect">
+                    <option selected>Escoge</option>
+                    <option value="1">50 kg</option>
+                    <option value="2">60 kg</option>
+                    <option value="3">70 kg</option>
+                    <option value="3">80 kg</option>
+                  </select>
+                </div>
+                <h2>Comorbilidades</h2>
+                <div class="col-4">
+                  <div><label>¿Presenta en enfermedades cardiacas?</label></div>
+                  <div class="d-flex justify-content-around align-items-center">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Si</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">No</label>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Cuales" style="width: 50%;"/>
+                </div>
+                </div>
+                <div class="col-4">
+                    <div><label>¿Presenta en enfermedades respiratorias?</label></div>
+                    <div class="d-flex justify-content-around align-items-center">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Si</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Cuales" style="width: 50%;"/>
+                  </div>
+                  </div>
+                  <div class="col-4">
+                    <div><label>¿Has tenido alguna cirugía?</label></div>
+                    <div class="d-flex justify-content-around align-items-center">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Si</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Cuales" style="width: 50%;"/>
+                  </div>
+                  </div>
+                  <div class="col-4">
+                    <div><label>¿Tienes alguna alergia?</label></div>
+                    <div class="d-flex justify-content-around align-items-center">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Si</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Cuales" style="width: 50%;"/>
+                  </div>
+                  </div>
+                  <div class="col-4">
+                    <div><label>¿Tienes enfermedades degenerativas?</label></div>
+                    <div class="d-flex justify-content-around align-items-center">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Si</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Cuales" style="width: 50%;"/>
+                  </div>
+                  </div>
+                  <div class="col-4">
+                    <div><label>¿Has tenido alguna cirugía?</label></div>
+                    <div class="d-flex justify-content-around align-items-center">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Si</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Cuales" style="width: 50%;"/>
+                  </div>
+                  </div>
+              <div class="d-flex">
+                <div
+                  class="col-sm-6"
+                  style="text-align: start; margin-top: 20px"
+                >
+                  <button type="button" class="btn btn-primary" (click)="show=1">
+                    Anterior
+                  </button>
+                </div>
+                <div class="col-sm-6" style="text-align: end; margin-top: 20px">
+                  <button type="button" class="btn btn-primary" (click)="show=3">
+                    Siguiente
+                  </button>
+                </div>
+            </div>
+            </form>
+            </fieldset>
+          </div>
+          <div *ngIf="show==3">
+            <fieldset>
+                <form class="row gx-6 gy-5 d-flex justify-content-evenly">
+                    <h2>Deportes</h2>
+                    <div class="col-4">
+                        <div><label>¿Te gusta el fútbol?</label></div>
+                        <div class="d-flex justify-content-around align-items-center">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                          <label class="form-check-label" for="inlineCheckbox1">Si</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">No</label>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col-4">
+                        <div><label>¿Te gusta el baloncesto?</label></div>
+                        <div class="d-flex justify-content-around align-items-center">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                          <label class="form-check-label" for="inlineCheckbox1">Si</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">No</label>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col-4">
+                        <div><label>¿Te gusta el Voleibol?</label></div>
+                        <div class="d-flex justify-content-around align-items-center">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                          <label class="form-check-label" for="inlineCheckbox1">Si</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">No</label>
+                        </div>
+                      </div>
+                      </div>
+                      <h2>Baile</h2>
+                      <div class="col-4">
+                          <div><label>¿Te gusta bailar salsa?</label></div>
+                          <div class="d-flex justify-content-around align-items-center">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Si</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">No</label>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="col-4">
+                          <div><label>¿Te gusta bailar zumba?</label></div>
+                          <div class="d-flex justify-content-around align-items-center">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Si</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">No</label>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="col-4">
+                          <div><label>¿Te gusta bailar folklor?</label></div>
+                          <div class="d-flex justify-content-around align-items-center">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Si</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">No</label>
+                          </div>
+                        </div>
+                        </div>
+                  <div class="d-flex">
+                    <div
+                      class="col-sm-6"
+                      style="text-align: start; margin-top: 20px"
+                    >
+                      <button type="button" class="btn btn-primary" (click)="show=2">
+                        Anterior
+                      </button>
+                    </div>
+                    <div class="col-sm-6" style="text-align: end; margin-top: 20px">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Terminar
+                          </button>
+                    </div>
+                </div>
+                </form>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="display: flex; align-items: center; flex-direction: column;">
+        <img src="../../../assets/recursos/Check.png" style="width: 25%; z-index:1;">
+      <div class="modal-content" style="
+      margin-top: -20px;
+      z-index: -1;
+      justify-content: center;
+      align-items: center;
+  ">
+        <div class="modal-header" style="border-bottom: none!important;">
+          <h2 class="modal-title" id="exampleModalLabel">Cuenta fue creada con éxito</h2>
+        </div>
+        <div class="modal-body">
+            Ahora puedes disfrutar de la plataforma y aprender jugando
+        </div>
+        <div class="modal-footer" style="border-top: none!important;">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" routerLink="/" routerLinkActive="active">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>
